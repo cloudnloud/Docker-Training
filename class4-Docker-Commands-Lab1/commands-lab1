@@ -1,14 +1,18 @@
+once installation over run this command from your login
+
+docker info
+
 To see the Docker Version
 
 docker --version
 *************************************************************************
 How to identify official images from docker hub
 
-docker search centos
+docker search httpd
 *************************************************************************
 How to run the image?
 
-docker run centos
+docker run httpd
 
 now this will be exited state.check docker ps -a command
 
