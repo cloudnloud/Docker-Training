@@ -20,7 +20,7 @@ so now you open the docker linux machine in 2 different putty window.
 
 run the below command in one window
 
-docker run -it centos bash
+docker run -it httpd bash
 
 in another window do the following command
 
@@ -54,7 +54,7 @@ docker exec -it 9abcc2cfa22e bash
 How to inspect running or exited containers?
 docker ps -a
 How to pull the docker image?
-docker pull centos
+docker pull httpd
 How to see current images?
 docker images
 How run the instant commands directly to one image
@@ -82,15 +82,31 @@ publish webserver ngnix in port 80 --> run in background permanently
 
 docker container run --publish 80:80 --detach nginx
 
+--detach or -dit --> both are same
+
 *************************************************************************
 
 inspect image
+first see what are the images available
+
+docker images
 
 docker image inspect nginx
 
 *************************************************************************
 
 inspect container
+
+docker container inspect <container id>
+
+
+*************************************************************************
+
+inspect container
+
+first see what are the containers which are running
+
+docker ps 
 
 docker container inspect 9abcc2cfa22e
 
@@ -109,7 +125,7 @@ remove:
 
   To set the name of the docker machine
   
-  docker run -d --name web httpd
+  docker run -d --name server1 httpd
   
 *************************************************************************
   
