@@ -6,8 +6,7 @@ vim dockerfile
 FROM rockylinux/rockylinux
 MAINTAINER Devops Engineer
 RUN yum update -y && yum -y install httpd
-RUN mkdir -p /data/myscript
-WORKDIR /data/myscript
+
 
 
 after you created the above file then run the below command
