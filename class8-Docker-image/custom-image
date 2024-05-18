@@ -3,7 +3,7 @@ Dockerfile Instructions Explained with Examples
 
 vim dockerfile
 
-FROM docker.io/centos
+FROM rockylinux/rockylinux
 MAINTAINER Devops Engineer
 RUN yum update -y && yum -y install httpd
 RUN mkdir -p /data/myscript
@@ -19,7 +19,7 @@ another dockerfile for more easy understanding
 
 vim Dockerfile --> creating the dockerfile via vim editor
 
-FROM docker.io/centos
+FROM rockylinux/rockylinux
 MAINTAINER admin
 RUN yum update -y && yum -y install httpd
 RUN echo "Welcome to our homepage created using dockerfile" > /var/www/html/index.html
