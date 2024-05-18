@@ -101,7 +101,7 @@ docker logs 09ca6feb6efc
 Searching image
 Search for a docker image on dockerhub with the name mentioned in the command.
 
-docker search centos
+docker search httpd
 
 *******************************************************************************************************************************
 
